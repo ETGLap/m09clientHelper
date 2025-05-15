@@ -5,11 +5,18 @@
 // ** Link: https://www.mongodb.com/resources/languages/mern-stack-tutorial  **
 // ****************************************************************************
 
-// Import the required libraries and dependencies
+// Import custom styles
 
-// Define the PostsModal component
-const PostsModal = ({ show, handleClose, handleConfirm }) => {
-    // Set up state to manage post content using useState
+// Import libraries and dependencies
+
+// Import custom components 
+
+// PostsModal component
+const Posts = () => {
+    // Deconstruct any props to get the necessary data
+
+    // Initialize any state using useState
+    // Initialize navigation using useNavigate
     
     // Initialize the post content state to an empty string
     const handleInputChange = (e) => {
@@ -35,4 +42,4 @@ const PostsModal = ({ show, handleClose, handleConfirm }) => {
     );
 };
 
-export default PostsModal;
+export default Posts;
