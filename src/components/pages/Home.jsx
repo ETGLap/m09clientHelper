@@ -48,7 +48,7 @@ export default function Home() {
                 // If not valid, return an error message
 
                 // Parse the response to JSON
-                    // The response should contain user posts
+                    // The response should contain user posts and their comments
 
                 // Update any state with the parsed response
             } catch (error) {

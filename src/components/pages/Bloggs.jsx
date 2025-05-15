@@ -5,29 +5,39 @@
 // ** Link: https://www.mongodb.com/resources/languages/mern-stack-tutorial  **
 // ****************************************************************************
 
-// Import the required libraries and dependencies
+// Import custom styles
 
-// Define the Home component
+// Import libraries and dependencies
+
+// Import custom components 
+
+// Bloggs component
 export default function Bloggs() {
-    // Set up state to manage posts using useState
+    // Initialize any state using useState
+    // Initialize navigation using useNavigate
     
-    // Fetch posts and users when the component mounts
-    // 
+    // useEffect to fetch users posts when the component mounts or when posts changes
     useEffect(() => {
         async function fetchPostsAndUsers() {
             try {
-                // Fetch all posts from the API
+                // Make an API call to fetch all posts
                 // Check if the response is ok
-                // Parse the response to JSON
+                // If not valid, return an error message
 
+                // Parse the response to JSON
+                    // The response should contain posts list, their user information and their comment list
+
+                // ! IF the first API call doesn't contain user information **
                 // Fetch all users from the API
                 // Check if the response is ok
+                // If not valid, return an error message
                 // Parse the response to JSON
-
+                    // The response should contain users list
                 // Create a map of userId to their post
                 // Combine user data with their post
+                // ! END IF
             
-                // Update state
+                // Update any state with the parsed response
             } catch (error) {
                 // Handle errors during the API call
                 console.error('Error fetching posts or users:', error);
@@ -40,16 +50,17 @@ export default function Bloggs() {
     async function handleLike() {
         try {
             // Determine the API endpoint based on whether it's a post or comment
-            // Make an API call to like the post or comment
-            // Optionally, refetch posts or update state to reflect the like
+            // Make an API call to like the post/or/comment endpoint and pass the posts/or/comment id as parameter
+            // Optionally, refetch posts to reflect the like.
         } catch (error) {
             // Handle errors during the API call
             console.error("Error liking post/comment:", error);
         }
     }
 
-    // Render the bloggs page using a library like react-bootstrap or tailwind
-    // Post(s) and their comment(s) should be displayed one under the other
+    // Render the home page using a library like react-bootstrap or tailwind
+    // Manage the layout by considering wrapping the `div` elements with CSS classes or utility frameworks like Bootstrap.
+        // Post(s) and their comment(s) should be displayed one under the other
     return (
         <div>
             
