@@ -5,7 +5,11 @@
 // ** Link: https://www.mongodb.com/resources/languages/mern-stack-tutorial  **
 // ****************************************************************************
 
-// Import the required libraries and dependencies
+// Import custom styles
+
+// Import libraries and dependencies
+
+// Import custom components 
 
 // Define the Sidebar component
 export default function Sidebar() {

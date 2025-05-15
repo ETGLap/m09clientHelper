@@ -5,18 +5,21 @@
 // ** Link: https://www.mongodb.com/resources/languages/mern-stack-tutorial  **
 // ****************************************************************************
 
-// Import the required libraries and dependencies
+// Import custom styles
 
-// Define the Header component
+// Import libraries and dependencies
+
+// Import custom components 
+
+// Header component
 export default function Header() {
-  // Set up state for managing modal
-
-  // Set up navigation functionality using useNavigate
+  // Initialize any state using useState
+  // Initialize navigation using useNavigate
 
   // Function to handle logout
   const handleLogout = async () => {
     try {
-      // Clear the cookie or localStorage
+      // Clear the cookies or localStorage
 
       // Navigate to the login page
     } catch (error) {
@@ -24,7 +27,6 @@ export default function Header() {
       console.error("Logout failed:", error);
     }
   };
-
 
   return (
     <div>
