@@ -58,9 +58,8 @@ export default function Bloggs() {
         }
     }
 
-    // Render the home page using a library like react-bootstrap or tailwind
+    // Render the bloggs page using a library like react-bootstrap or tailwind
     // Manage the layout by considering wrapping the `div` elements with CSS classes or utility frameworks like Bootstrap.
-        // Post(s) and their comment(s) should be displayed one under the other
     return (
         <div>
             

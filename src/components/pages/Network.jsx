@@ -5,29 +5,40 @@
 // ** Link: https://www.mongodb.com/resources/languages/mern-stack-tutorial  **
 // ****************************************************************************
 
-// Import the required libraries and dependencies
+// Import custom styles
 
-// Define the Network component
+// Import libraries and dependencies
+
+// Import custom components 
+
+// Network component
 export default function Network() {
-    // Set up state to manage users and their most recent posts
+    // Initialize any state using useState
+    // Initialize navigation using useNavigate
     
-    // Fetch users and their most recent posts when the component mounts
-    // You can refer to the example in the RecordList.jsx file from the MERN stack tutorial. Link: https://www.mongodb.com/resources/languages/mern-stack-tutorial
+    // useEffect to fetch users information when the component mounts
     useEffect(() => {
         async function fetchUsersAndPosts() {
             try {
-                // Fetch all users from the API
+                // Make an API call to fetch all users
                 // Check if the response is ok
-                // Parse the response to JSON
+                // If not valid, return an error message
 
-                // Fetch all posts from the API
-                // Check if the response is ok
                 // Parse the response to JSON
+                    // The response should contain a list of users
+
+                // Make an API call to fetch all posts
+                // Check if the response is ok
+                // If not valid, return an error message
+
+                // Parse the response to JSON
+                    // The response should contain a list of posts
                 
-                // Create a map of userId to their most recent post
-                // Combine user data with their most recent post
+                // For each user, find their latest post by filtering and sorting their posts date or timestamp.
+                // .filter
+                // .sort
             
-                // Update state
+                // Update any state with the parsed response
             } catch (error) {
                 console.error('Error fetching users or posts:', error);
             }
@@ -35,7 +46,8 @@ export default function Network() {
         fetchUsersAndPosts();
     }, []);
 
-    // Render user cards with their most recent post
+    // Render the network page using a library like react-bootstrap or tailwind
+    // Manage the layout by considering wrapping the `div` elements with CSS classes or utility frameworks like Bootstrap.
     return (
         <div>
             
