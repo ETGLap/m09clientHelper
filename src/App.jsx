@@ -5,26 +5,27 @@
 // ** Link: https://www.mongodb.com/resources/languages/mern-stack-tutorial  **
 // ****************************************************************************
 
+// Import custom styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Outlet } from "react-router-dom";
-// Import the required components
-// Import the required libraries and dependencies
 
-// The `App` component serves as the main layout for the application.
+// Import libraries and dependencies
+import { Outlet } from "react-router-dom";
+
+// Import custom components 
+
+// App is the main application layout component
 const App = () => {
-  // Set up state using useState if needed
+  // Initialize any state using useState
   // Initialize navigation using useNavigate
 
+  // useEffect to validate authentication token on initial app load
   useEffect(() => {
-    // Get the token from the cookies
-   
-    // Define an async function for validation
     const validateToken = async () => {
-      // If no token exists, navigate to the login page
+      // Get the token from the cookies
+      // If no token, navigate to the login page
     
       try {
-        // Fetch the validation endpoint with the token
-        
+        // Fetch the validation endpoint with the token as parameter
         // Check if the response is ok 
         // If not valid, navigate to the login page
   
@@ -34,14 +35,11 @@ const App = () => {
         // If error, navigate to the login page
       }
     };
-
-    // Call the validateToken function
     validateToken();
   }, []);
   
   // Manage the layout by considering wrapping the `div` elements with CSS classes or utility frameworks like Bootstrap.
   return (
-    
     <div>
       <div>
         {/* Header - Positioned at the top of the page. */}  

@@ -5,25 +5,32 @@
 // ** Link: https://www.mongodb.com/resources/languages/mern-stack-tutorial  **
 // ****************************************************************************
 
-// Import the required libraries and dependencies
+// Import custom styles
 
-// Define the Home component
+// Import libraries and dependencies
+
+// Import custom components 
+
+// Home component
 export default function Home() {
-    // Set up state to manage user information using useState
-    // Set up state to manage user posts using useState
-    
+    // Initialize any state using useState
+    // Initialize navigation using useNavigate
+
     // Retrieve the logged-in user's ID from cookies or localStorage
     // (Consider using useEffect if the retrieval depends on other state or props)
 
-    // Fetch user information when the component mounts or when userId changes
+    // useEffect to fetch user information when the component mounts or when userId changes
     useEffect(() => {
         async function fetchUserInfo() {
             try {
                 // Make an API call to fetch user information
                 // Check if the response is ok
-                // Parse the response to JSON
+                // If not valid, return an error message
 
-                // Update the state with the fetched user information
+                // Parse the response to JSON
+                    // The response should contain user information
+
+                // Update any state with the parsed response
             } catch (error) {
                 // Handle errors during the API call
                 console.error("Error fetching user info:", error);
@@ -32,15 +39,18 @@ export default function Home() {
         fetchUserInfo();
     }, [/* Add a dependency variable to update the useEffect */]);
 
-    // Fetch user posts when the component mounts or when userId changes
+    // useEffect to fetch user posts when the component mounts or when userId changes
     useEffect(() => {
         async function fetchUserPosts() {
             try {
-                // Make an API call to fetch user posts
+                // Make an API call to fetch user posts and pass the user id as parameter
                 // Check if the response is ok
-                // Parse the response to JSON
+                // If not valid, return an error message
 
-                // Update the state with the fetched user posts
+                // Parse the response to JSON
+                    // The response should contain user posts
+
+                // Update any state with the parsed response
             } catch (error) {
                 // Handle errors during the API call
                 console.error("Error fetching user posts:", error);
@@ -53,8 +63,8 @@ export default function Home() {
     async function handleLike() {
         try {
             // Determine the API endpoint based on whether it's a post or comment
-            // Make an API call to like the post or comment
-            // Optionally, refetch posts or update state to reflect the like
+            // Make an API call to like the post/or/comment endpoint and pass the posts/or/comment id as parameter
+            // Optionally, refetch posts to reflect the like.
         } catch (error) {
             // Handle errors during the API call
             console.error("Error liking post/comment:", error);
@@ -62,8 +72,9 @@ export default function Home() {
     }
 
     // Render the home page using a library like react-bootstrap or tailwind
-    // User information should be displayed on the left side
-    // User posts and comments should be displayed on the right side
+    // Manage the layout by considering wrapping the `div` elements with CSS classes or utility frameworks like Bootstrap.
+        // User information should be displayed on the left side
+        // User posts and comments should be displayed on the right side
     return (
         <div>
             
